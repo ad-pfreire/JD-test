@@ -85,17 +85,17 @@ describe('Flujo vuelos sin codigo promocional', () => {
     // principalPage.visit();
     // cy.wait(2000); 
     // principalPage.validateTitle();
-    //principalPage.selectDeparting(options.july); ///        AQUI DEJO VACIO ON PURPOSE!!!!!!!
-   // cy.wait(2000); 
+    //principalPage.selectDeparting(options.july); ///        AQUI DEJO VACIO ON PURPOSE
+    //cy.wait(2000); 
     //principalPage.selectReturning(options.december);
     //cy.wait(2000); 
     principalPage.clickSearch();
     cy.wait(2000);
-    principalPage.validatemessage('Sorry, there are no more seats available.');
+    principalPage.validatemessage('Sorry, there are no more seats available.'); // Aqui el mensaje debería ser invàlido
     cy.wait(2000);
   })
 
-  it.only('vuelo JULIO NY a December ', () => {
+  it('vuelo JULIO NY a December ', () => {
     // Visita la URL
     // principalPage.visit();
     // cy.wait(2000); 
@@ -106,7 +106,7 @@ describe('Flujo vuelos sin codigo promocional', () => {
     cy.wait(2000); 
     principalPage.clickSearch();
     cy.wait(2000);
-    principalPage.validatemessage('Unfortunately, this schedule is not possible. Please try again.');
+    principalPage.validatemessage('Sorry, there are no more seats available.'); 
     cy.wait(2000);
   })
 

@@ -24,7 +24,7 @@ describe('navegar a la pagia principal', () => {
         cy.wait(2000);
       })
 
-        it('navegar al home con el boton de back', () => {
+        it('navegar al home con el boton de back', () => {  //..
         // Visita la URL
         principalPage.visit();
         cy.wait(2000); 
@@ -32,7 +32,7 @@ describe('navegar a la pagia principal', () => {
         principalPage.validatedepartingfield();
         principalPage.validatereturningfield();
         principalPage.selectDeparting(options.july);
-        cy.wait(2000); 
+        cy.wait(2000); //.. 
         principalPage.selectReturning(options.decembertwoyears);
         cy.wait(2000); 
         principalPage.clickSearch();

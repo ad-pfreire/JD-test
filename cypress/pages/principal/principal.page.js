@@ -58,7 +58,8 @@ export class PrincipalPage { // EN ESTA CLASE.... AQUI TOOODAS ESTAS SON FUNCION
     }
 
     reportanissuelink(){
-        cy.get('#report_issue > ul > li:nth-child(1) > a) > a').should('be.visible').click();
+       // cy.get('#report_issue > ul > li:nth-child(1) > a) > a').should('be.visible').click(); 
+        cy.get('#report_issue > ul > li:nth-child(1) > a').should('be.visible').click(); // #report_issue > ul > li:nth-child(1) > a 
     }
 
 }

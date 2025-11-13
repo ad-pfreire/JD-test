@@ -23,7 +23,7 @@ describe('Flujo vuelos con codigo promocional', () => {
     principalPage.promocode('AF2-FJK-417');// aaux
     principalPage.clickSearch();
     cy.wait(2000);
-    principalPage.validatemessage('20% discount');
+    principalPage.validatemessage('20% discount'); // Valido todo el mensaje: 'Promotional code AF2-FJK-417 used: 20% discount!' ?? 
     cy.wait(2000);
     principalPage.validatemessage('Call now on 0800 MARSAIR to book!');
     cy.wait(2000);

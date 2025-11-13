@@ -9,7 +9,7 @@ export const returning = {
 }
 
 export const options = {
-    july: 'July',//. clave:valor...key:value
+    july: 'July',//. clave:valor..key:value 
     december: 'December',
     julyny: 'July (next year)',
     decemberny: 'December (next year)',
