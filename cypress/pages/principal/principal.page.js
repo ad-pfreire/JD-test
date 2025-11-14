@@ -64,9 +64,7 @@ export class PrincipalPage { // EN ESTA CLASE.... AQUI TOOODAS ESTAS SON FUNCION
 
 }
 
-export default new PrincipalPage();
-
-
+export default new PrincipalPage();  //--
 
 //// NICOOOOOOOOOO (instancias)
 

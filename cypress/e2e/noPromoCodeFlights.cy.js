@@ -50,6 +50,22 @@ describe('Flujo vuelos sin codigo promocional', () => {
     cy.wait(2000);
   })
 
+
+  it('vuelo Diciembre a Julio Next Year', () => {
+
+    principalPage.selectDeparting(options.december);
+    cy.wait(2000); 
+    principalPage.selectReturning(options.julyny);
+    cy.wait(2000); 
+    principalPage.clickSearch();
+    cy.wait(2000);
+    // principalPage.validatemessage('Seats available!');
+    // cy.wait(1000);
+    principalPage.validatemessage('Unfortunately, this schedule is not possible. Please try again.');
+    cy.wait(2000);
+    
+  });
+
   it('vuelo deciembre a diciembre next year', () => {
     // Visita la URL
     // principalPage.visit();
@@ -65,7 +81,7 @@ describe('Flujo vuelos sin codigo promocional', () => {
     cy.wait(2000);
   })
 
-  it('vuelo julio a diciembre', () => {
+  it('vuelo julio a diciembre', () => { //TEST CASES EXCEL
     // Visita la URL
     // principalPage.visit();
     // cy.wait(2000); 
